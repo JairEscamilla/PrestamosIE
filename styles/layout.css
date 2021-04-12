@@ -30,7 +30,7 @@
 .navigation ul{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .navigation ul li{
@@ -45,7 +45,19 @@
 
 .navigation ul .active {
   position: relative;
-  top: -4px;
+  top: -5px;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+}
+
+.icons-container{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 25px;
+}
+
+.icons-container span{
+  margin: 0 8px;
+  cursor: pointer;
+  font-size: 1.5rem;
 }
