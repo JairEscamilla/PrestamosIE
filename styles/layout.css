@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'PT Sans', sans-serif;
+} 
+
+.header{
+  background-color: #EF4044;
+  color: white;
+  padding: 25px;
+}
+
+.header .lab-title{
+  margin: 20px 0;
+}
+
+.institutional-image-container .logo{
+  display: none;
+  width: 200px;
+  height: auto;
+}
+
+.navigation{
+  margin-top: 40px;
+}
+
+.navigation ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navigation ul li{
+  display: inline-block;
+  font-size: 1rem;
+}
+
+.navigation ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+.navigation ul .active {
+  position: relative;
+  top: -4px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
