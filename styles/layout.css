@@ -12,7 +12,6 @@
 } 
 
 .header{
-  position: relative;
   background-color: var(--ibero-red-color);
   color: white;
   padding: 25px;
@@ -56,13 +55,14 @@
 }
 
 .icons-container{
+  position: relative;
   display: flex;
   justify-content: flex-end;
   margin-top: 25px;
 }
 
 .icons-container span{
-  margin: 0 8px;
+  margin: 10px;
   cursor: pointer;
   font-size: 1.5rem;
   z-index: 1;
@@ -79,19 +79,21 @@
 
 .cart-container{
   position: absolute;
-  top: 245px;
-  left: 50px;
+  top: 0px;
+  left: 8px;
   z-index: 0;
   border: solid 2px var(--ibero-red-color);
   background: white;
   color: black;
-  box-shadow: 5px 50px 80px rgba(0, 0, 0, 0.3);
-  width: 250px;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
+  width: 180px;
   padding: 10px 30px;
   opacity: 0;
+  visibility: hidden;
 }
 
 .cart-container.active{
   opacity: 1;
   transition: 0.2s;
+  visibility: visible;
 }
