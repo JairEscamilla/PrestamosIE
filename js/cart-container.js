@@ -2,8 +2,12 @@
   const cartIcon = document.querySelector(".cart-icon");
   const cartContainer = document.querySelector(".cart-container");
 
-  document.addEventListener('click', () => {
-    
+  document.addEventListener('click', (event) => {
+    console.log(event.target);
+    if(event.target != cartIcon){
+      cartIcon.classList.remove('active');
+      cartContainer.classList.remove('active');
+    }
   })
 
   cartIcon.addEventListener('click', () => {
