@@ -4,9 +4,31 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Login Préstamos IE</title>
+  <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-  
+  <div class="card-login hoverable">
+    <div class="card-content">
+      <img class="logo-ibero" src="images/logoIBERO.png" alt="Logo IBERO">
+      <p class="title-login">Inicio de sesión</p>
+      <br>
+      <form id='form-login'>
+        <div class="input-form">
+          <p class="input-label">Número de cuenta</p>
+          <input type="text" name="numCuenta" placeholder="208366-9">
+        </div>
+        <input type="password" name="password" placeholder="Contraseña">
+        <select class="round" name="" id="">
+          <option value="1" disabled>Tipo de usuario</option>
+          <option value="1">Alumno</option>
+          <option value="1">Profesor</option>
+          <option value="1">Laboratorista</option>
+        </select>
+        <br>
+        <button class="button-login" type="submit">Entrar</button>
+      </form>
+    </div>
+  </div>
 </body>
 </html>
