@@ -31,23 +31,23 @@
   margin-top: 40px;
 }
 
-.navigation ul{
+.navigation .coordination-list{
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
-.navigation ul li{
+.navigation .coordination-list li{
   display: inline-block;
   font-size: 1rem;
 }
 
-.navigation ul li a{
+.navigation .coordination-list li a{
   text-decoration: none;
   color: white;
 }
 
-.navigation ul .active {
+.navigation .coordination-list .active {
   position: relative;
   top: -5px;
   font-weight: bold;
@@ -62,7 +62,7 @@
 }
 
 .icons-container span{
-  margin: 10px;
+  margin: 0 10px;
   cursor: pointer;
   font-size: 1.5rem;
   z-index: 1;
@@ -75,11 +75,11 @@
 
 .icons-container span.active{
   color: black;
-}
+} 
 
 .cart-container{
   position: absolute;
-  top: 0px;
+  top: -10px;
   right: 80px;
   z-index: 0;
   border: solid 2px var(--ibero-red-color);
@@ -137,5 +137,20 @@
   .request-button{
     margin-top: 20px;
     right: -100px;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .navigation .coordination-list{
+    width: 40%;
+  }
+
+  .navigation{
+      display: flex;
+  }
+  .icons-container{
+    width: 60%;
+    margin-top: 0;
+    right: 0px;
   }
 }
