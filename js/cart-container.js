@@ -3,8 +3,7 @@
   const cartContainer = document.querySelector(".cart-container");
 
   document.addEventListener('click', (event) => {
-    console.log(event.target);
-    if(event.target != cartIcon){
+    if (event.target != cartIcon && !event.target.closest(".cart-container.active")){
       cartIcon.classList.remove('active');
       cartContainer.classList.remove('active');
     }

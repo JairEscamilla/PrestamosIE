@@ -97,3 +97,21 @@
   transition: 0.2s;
   visibility: visible;
 }
+
+
+.request-button{
+  position: relative;
+  right: -55px;
+  background: var(--ibero-red-color);
+  color: white;
+  padding: 0.5rem 0.8rem;
+  border: none;
+  font-weight: bold;
+  border-radius: 4px;
+  outline: 0;
+  transition: 0.5s;
+}
+
+.request-button:active{
+  transform: scale(0.8);
+}
