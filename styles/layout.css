@@ -153,4 +153,10 @@
     margin-top: 0;
     right: 0px;
   }
+  .institutional-image-container .logo{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 }
