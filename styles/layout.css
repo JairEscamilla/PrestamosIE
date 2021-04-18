@@ -99,6 +99,17 @@
 }
 
 
+.material-title, .material-list li{
+  font-weight: bold;
+}
+
+.cart-container .material-title{
+  position: relative;
+  left: -25px;
+  display: inline-block;;
+  font-size: 1.1rem;
+}
+
 .request-button{
   position: relative;
   right: -55px;
@@ -110,6 +121,8 @@
   border-radius: 4px;
   outline: 0;
   transition: 0.5s;
+  margin-top: 0.5rem;
+  margin-bottom: 0.3rem;
 }
 
 .request-button:active{
