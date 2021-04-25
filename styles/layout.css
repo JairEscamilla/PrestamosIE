@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+:root{
+  --ibero-red-color: #EF4044;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'PT Sans', sans-serif;
+} 
+
+.header{
+  background-color: var(--ibero-red-color);
+  color: white;
+  padding: 25px;
+}
+
+.header .lab-title{
+  margin: 20px 0;
+}
+
+.institutional-image-container .logo{
+  display: none;
+  width: 200px;
+  height: auto;
+}
+
+.navigation{
+  margin-top: 40px;
+}
+
+.navigation .coordination-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navigation .coordination-list li{
+  display: inline-block;
+  font-size: 1rem;
+}
+
+.navigation .coordination-list li a{
+  text-decoration: none;
+  color: white;
+}
+
+.navigation .coordination-list .active {
+  position: relative;
+  top: -5px;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.icons-container{
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 25px;
+}
+
+.icons-container span{
+  margin: 0 10px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  z-index: 1;
+}
+
+.icons-container span:active{
+  transform: scale(0.5);
+  transition: 0.5s;
+}
+
+.icons-container span.active{
+  color: black;
+} 
+
+.cart-container{
+  position: absolute;
+  top: -10px;
+  right: 80px;
+  z-index: 0;
+  border: solid 2px var(--ibero-red-color);
+  background: white;
+  color: black;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
+  width: 180px;
+  padding: 10px 30px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.cart-container.active{
+  opacity: 1;
+  transition: 0.2s;
+  visibility: visible;
+}
+
+
+.material-title, .material-list li{
+  font-weight: bold;
+}
+
+.cart-container .material-title{
+  position: relative;
+  left: -25px;
+  display: inline-block;;
+  font-size: 1.1rem;
+}
+
+.request-button{
+  position: relative;
+  right: -55px;
+  background: var(--ibero-red-color);
+  color: white;
+  padding: 0.5rem 0.8rem;
+  border: none;
+  font-weight: bold;
+  border-radius: 4px;
+  outline: 0;
+  transition: 0.5s;
+  margin-top: 0.5rem;
+  margin-bottom: 0.3rem;
+  cursor: pointer;
+}
+
+.request-button:active{
+  transform: scale(0.8);
+}
+
+@media screen and (min-width: 360px){
+  .cart-container{
+    width: 225px;
+  }
+  .request-button{
+    margin-top: 20px;
+    right: -100px;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .navigation .coordination-list{
+    width: 40%;
+  }
+
+  .navigation{
+      display: flex;
+  }
+  .icons-container{
+    width: 60%;
+    margin-top: 0;
+    right: 0px;
+  }
+  .institutional-image-container .logo{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
