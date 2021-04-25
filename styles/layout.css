@@ -156,7 +156,7 @@
   .institutional-image-container .logo{
     display: block;
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 20px;
+    top: 40px;
   }
 }
