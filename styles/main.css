@@ -10,23 +10,45 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'PT Sans', sans-serif;
-} 
+}
 
-body {
-  background-color: var(--ibero-background);
+
+* {
+  box-sizing: border-box;
+}
+
+
+.bg-image {
+  /* The image used */
+  background-image: url("../images/backgroundT.jpg");
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Full height */
+  height: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  /* Center and scale the image nicely */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
 }
 
 .card-login {
   max-width: 500px;
-  width: 70%;
-  height: auto;
   min-height: 450px;
   text-align: center;
   background-color: var(--ibero-red-color);
   margin: auto;
   border-radius: 15px;
-  margin-top: 20px;
   color: white;
+  z-index: 2;
+  
 }
 
 .hoverable{
@@ -42,8 +64,8 @@ body {
 }
 
 .card-content {
-  margin: auto;
   width: 100%;
+  margin: 50% 0;
 }
 
 .logo-ibero {
@@ -61,9 +83,12 @@ body {
   font-size: 15px;
 }
 
+.input-label {
+  font-size: 18px;
+}
 
 input {
-  width: 50%;
+  width: 70%;
   padding: 12px 14px;
   margin: 8px 0;
   box-sizing: border-box;
@@ -71,12 +96,14 @@ input {
   border-radius: 10px;
   color: var(--ibero-red-color);
 }
+
+
 *:focus {
   outline: none;
 }
 
 select {
-  width: 50%;
+  width: 70%;
   color: var(--ibero-red-color);
   font-size: 15px;
   background-color: white;
@@ -134,8 +161,8 @@ select.round:focus {
   border:0.16em solid rgba(255,255,255,0);
   color: var(--ibero-red-color);
   font-size: 15px;
-  margin-top: 15px;
-  margin-left: 145px;
+  margin-top: 20px;
+  margin-left: calc(100% - 250px);
   cursor: pointer;
   transition: all 0.2s;
 }
@@ -144,4 +171,17 @@ button:hover {
   border-color: rgb(117, 117, 117);
   background-color: #f0f0f0;
   color: #ff0004
+}
+
+@media screen and (max-width: 768px) {
+  .card-login {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .button-login { 
+    text-align: center;
+    margin: 20px auto;
+  }
 }
