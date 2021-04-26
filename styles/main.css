@@ -19,21 +19,19 @@
 
 
 .bg-image {
-  /* The image used */
+
   background-image: url("../images/backgroundT.jpg");
 
-  /* Add the blur effect */
   filter: blur(5px);
   -webkit-filter: blur(5px);
 
-  /* Full height */
+  transform: scale(1.1);
   height: 100%;
   position: fixed;
   left: 0;
   right: 0;
-  top: 0;
-  transform: scale(1.1);
-  /* Center and scale the image nicely */
+  top: 0;  
+
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -48,20 +46,7 @@
   margin: auto;
   border-radius: 15px;
   color: white;
-  z-index: 2;
-  
-}
-
-.hoverable{
-  -webkit-transition: -webkit-box-shadow .25s;
-  transition: -webkit-box-shadow .25s;
-  transition: box-shadow .25s;
-  transition: box-shadow .25s, -webkit-box-shadow .25s;
-}
-
-.hoverable:hover{
-  -webkit-box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  z-index: 2;  
 }
 
 .card-content {
@@ -184,5 +169,11 @@ button:hover {
   .button-login { 
     text-align: center;
     margin: 20px auto;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .card-content {
+    margin: 25% 0;
   }
 }

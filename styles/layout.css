@@ -130,6 +130,59 @@
   transform: scale(0.8);
 }
 
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-flow: wrap;
+}
+
+.card {
+  margin: 20px 0;
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);
+  width: 100%;
+  transition: 0.4s;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.card-details {
+  padding: 10px 20px;
+}
+
+.card-details > h3 {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.card-details > p {
+  color: a0a0a0;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+@media only screen and (min-width: 601px) {
+  .card {
+      width: 45%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .card {
+      width: 30%;
+  }
+}
+
 @media screen and (min-width: 360px){
   .cart-container{
     width: 225px;
