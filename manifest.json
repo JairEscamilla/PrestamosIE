@@ -1,0 +1,15 @@
+{
+  "short_name": "Prestamos IE",
+  "name": "Sistema de prestamos de Ingeniería Electrónica",
+  "icons": [
+    {
+      "src": "images/logoIBERO.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#EF4044",
+  "theme_color": "#EF4044",
+  "display": "standalone"
+}
