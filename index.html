@@ -5,10 +5,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login Préstamos IE</title>
+  <link rel="shortcut icon" href="images/ibero.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="./styles/utils.css">
   <link rel="stylesheet" href="styles/main.css">
+  <link rel="manifest" href="/manifest.json">
 </head>
 <body>
-  <div class="card-login hoverable">
+  <div class="bg-image"></div>
+  <div class="card-login hoverable animate__animated animate__fadeInDown">
     <div class="card-content">
       <img class="logo-ibero" src="images/logoIBERO.png" alt="Logo IBERO">
       <p class="title-login">Inicio de sesión</p>
@@ -32,5 +37,20 @@
       </form>
     </div>
   </div>
+  <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () {
+          navigator.serviceWorker.register('service-worker.js').then(function (registration) {
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+          }, function (err) {
+            console.log('ServiceWorker registration failed: ', err);
+          }).catch(function (err) {
+            console.log(err)
+          });
+        });
+      } else {
+        console.log('service worker is not supported');
+      }
+    </script>
 </body>
 </html>
