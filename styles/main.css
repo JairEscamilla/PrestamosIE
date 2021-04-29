@@ -39,7 +39,7 @@
 }
 
 .card-login {
-  max-width: 500px;
+  width: 450px;
   min-height: 450px;
   text-align: center;
   background-color: var(--ibero-red-color);
@@ -51,7 +51,11 @@
 
 .card-content {
   width: 100%;
-  margin: 50% 0;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
 }
 
 .logo-ibero {
@@ -159,7 +163,7 @@ button:hover {
   color: #ff0004
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 500px) {
   .card-login {
     width: 90%;
   }
@@ -172,8 +176,3 @@ button:hover {
   }
 }
 
-@media screen and (max-width: 360px) {
-  .card-content {
-    margin: 25% 0;
-  }
-}
