@@ -62,6 +62,16 @@
   </header>
 
   <div class="container">
+    <div class="top-content">
+      <h1 id="catalogue-title">Catálogo</h1>
+      <div class="search">      
+        <div class="icon"></div>
+        <div class="input">
+          <input type="text" placeholder="Buscar" id="my-search">
+        </div>
+        <span class="clear"></span>
+      </div>
+    </div>
     <div class="row">
       <div class="card hoverable">
         <div class="card-image">
@@ -147,5 +157,20 @@
     </div>
 
   </div>
+  <script>
+    const icon = document.querySelector('.icon');
+    const search = document.querySelector('.search');
+    const clear = document.querySelector('.clear');
+    const searchInput = document.querySelector('#my-search');
+
+    icon.addEventListener('click', () => {
+      search.classList.toggle('active');
+    });
+
+    clear.addEventListener('click', () => {
+      searchInput.value = '';
+    }); 
+
+  </script>
 </body>
 </html>
