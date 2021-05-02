@@ -85,3 +85,33 @@
   transform: scale(0.9);
   transition: 0.3s ease-out;
 }
+
+.styled-select{
+  position: relative;
+  float: left;
+  min-width: 10px;
+}
+
+.styled-select::after{
+  content: "▼";
+  color: white;
+  position: relative;
+  right: 30px;
+  top: 0px;
+  pointer-events: none;
+}
+
+select.quantity-select{
+  color: white;
+  background-color: var(--ibero-red-color);
+  width: 80px;
+  outline: 0;
+  border: none;
+  border-radius: 20px;
+  padding-left: 25px;
+  font-size: 1rem;
+  font-weight: 500;
+  height: 30px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
