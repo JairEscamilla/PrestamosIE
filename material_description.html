@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prestamos IE</title>
+  <link rel="shortcut icon" href="images/ibero.png" type="image/x-icon">
+  <link rel="stylesheet" href="./styles/layout.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/material_description.css">
+  <script defer src="./js/cart-container.js"></script>
+</head>
+<body>
+  <header class="header" >
+    <div class="title-and-logo-container">
+      <div class="title">
+        <h1>  
+          Reserva y préstamo de equipo
+        </h1>
+      </div>
+      <div class="institutional-image-container">
+        <img src="./images/logoIBERO.png" alt="Logo de la ibero" class="logo">
+      </div>
+    </div>
+
+    <h2 class="lab-title">Laboratorios de ingenierías</h2>
+    <nav class="navigation">
+      <ul class="coordination-list">
+        <li class="active">
+          <a href="#">
+            Electrónica
+          </a>
+        </li>
+        
+        <li>
+          <a href="#">
+            Biomédica
+          </a>
+        </li>
+        <li>
+          <a href="">
+            Mecánica
+          </a>
+        </li>
+      </ul>
+      <div class="icons-container">
+        <span class="material-icons md-18 cart-icon">shopping_cart</span>
+        <span class="material-icons md-18">person</span>
+        <span class="material-icons md-18" onclick="location.href='/'">logout</span>
+        <div class="cart-container">
+          <span class="material-title">Material</span>
+          <ul class="material-list">
+            <li>Resistencia 330Ω (1)</li>
+            <li>Resistencia 1KΩ (1)</li>
+          </ul>
+          <button class="request-button">Solicitar</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main-container">
+    <div class="material_description-container">
+      <div class="material-image-container">
+        <h2>Material</h2>
+        <img 
+          src="./images/circuito-integrado.webp" 
+          alt="imagen de un circuito integrado" 
+          class="material-image"
+        >
+      </div>
+      <div class="description-container">
+        <h3>Descripción</h3>
+        <p class="description">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam laboriosam nostrum ab nulla quia, culpa earum corrupti illum unde harum dolorem perferendis, magnam labore omnis. Voluptatem nostrum saepe consectetur eaque!
+        </p>
+        <button class="datasheet-button">Datasheet</button>
+        <div class="select-container">
+          <div class="text-and-button-container">
+            <label class="quantity-label">Cantidad</label>
+            <br>
+            <div class="styled-select">
+              <label>
+                <select name="cantidad" class="quantity-select">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </label>
+            </div>
+            <span class="plus-button">
+              +
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
