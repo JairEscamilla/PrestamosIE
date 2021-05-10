@@ -5,7 +5,7 @@ const titleLogoContainer = document.querySelector(".title-and-logo-container");
 const labTitle = document.querySelector(".lab-title");
 
 document.addEventListener("scroll", (e) => {
-  if(window.scrollY >= headerTop){
+  if(window.scrollY > 0){
     header.classList.add("sticky-nav");
     titleLogoContainer.style.display = "none";
     labTitle.style.display = "none";

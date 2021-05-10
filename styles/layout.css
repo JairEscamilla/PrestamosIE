@@ -16,14 +16,17 @@ body{
 }
 
 .header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   background-color: var(--ibero-red-color);
   color: white;
   padding: 25px;
+  transition: 0.2s linear;
 }
 
 .sticky-nav{
-  position: fixed;
-  top: 0;
   width: 100%;
   padding-top: 0;
   box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
@@ -144,10 +147,9 @@ body{
 }
 
 .container {
-  margin: 0 auto;
+  margin: 30vh auto;
   max-width: 1280px;
   width: 90%;
-  
 }
 
 .top-content {
