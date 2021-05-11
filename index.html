@@ -25,16 +25,14 @@
             <input type="text" name="numCuenta" placeholder="208366-9">
           </div>
           <input type="password" name="password" placeholder="Contraseña">
-          <select class="round" name="" id="">
+          <select class="round">
             <option disabled>Tipo de usuario</option>
             <option value="1">Alumno</option>
             <option value="2">Profesor</option>
             <option value="3">Laboratorista</option>
           </select>
           <br>
-          <a href="./layout.html">
-            <button class="button-login" type="button">Entrar</button>
-          </a>
+          <button class="button-login" type="button">Entrar</button>
         </form>
       </div>
     </div>
@@ -53,6 +51,12 @@
       } else {
         console.log('service worker is not supported');
       }
-    </script>
+  </script>
+  <script>
+    const $loginButton = document.querySelector(".button-login");
+    $loginButton.addEventListener('click', () => {
+      window.location.href = "./layout.html"
+    })
+  </script>
 </body>
 </html>

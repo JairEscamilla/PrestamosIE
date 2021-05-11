@@ -19,7 +19,7 @@ const createMaterialCards = () => {
     div.classList.add('hoverable');
     div.innerHTML = `
       <div class="card-image">
-        <img src="https://blogs.uninter.edu.mx/ESCAT/wp-content/uploads/2020/04/osciloscopio-1024x683.png" alt="">
+        <img src="./images/material.jpg" alt="">
       </div>
       <div class="card-details">
         <h3>Material ${i}</h3>
