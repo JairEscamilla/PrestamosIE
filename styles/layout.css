@@ -149,7 +149,7 @@ body{
 }
 
 .container {
-  margin: 30vh auto;
+  margin: 225px auto 0 auto;
   max-width: 1280px;
   width: 90%;
 }
@@ -369,7 +369,7 @@ img {
   }  
 }
 
-@media screen and (min-width: 360px) {
+@media screen and (min-width: 361px) {
   .cart-container{
     width: 225px;
   }
@@ -421,5 +421,21 @@ img {
     width: 100%;
     margin-bottom: 20px;
     font-size: 45px;
+  }
+
+  .container {
+    margin: 270px auto 0 auto;
+  }
+}
+
+@media screen and (max-width: 474px) {
+  .container {
+    margin: 310px auto 0 auto;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .container {
+    margin: 340px auto 0 auto;
   }
 }
