@@ -1,7 +1,9 @@
 .main-container{
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-bottom: 70px;
+  margin-top: 40vh;
 }
 
 .material_description-container{
@@ -129,6 +131,32 @@ select.quantity-select{
   -moz-appearance: none;
 }
 
+#dialog{
+  padding: 2rem;
+  border-radius: 7px;
+  border: none;
+  font-size: larger;
+  text-align: center;
+  margin: 50vh auto;
+}
+
+#dialog p{
+  margin-bottom: 20px;
+}
+
+@keyframes show{
+    from {
+        transform: translateY(-3000px);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+
+dialog[open] {
+    animation: show 0.3s ease-out normal;
+}
+
 
 @media screen and (min-width: 500px){
   .material-image-container img{
@@ -137,16 +165,19 @@ select.quantity-select{
   }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 750px) {
+  .main-container{
+    margin-top: 30vh;
+  }
+
   .material_description-container{
-    width: 60%;
+    width: 95%;
+    max-width: 900px;
     justify-content: center;
   }
   
   .material-image-container{
     width: 30%;
-    min-width: 200px;
-    max-width: 250px;
   }
 
 .description-container{

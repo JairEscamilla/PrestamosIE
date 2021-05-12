@@ -13,7 +13,7 @@ const createCards = () => {
       <div class="card-details">
         <h3>Categoría ${i}</h3>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, dolorum. Consectetur nemo iusto dolor inventore dignissimos vitae, aspernatur est, nulla a odio temporibus, minus placeat non qui dolores fugiat quas.</p>
-        <a class="material-button" href="material.html?category=${i}">Detalles<i class="iconButton fa fa-arrow-right"></i></a>
+        <a class="material-button" href="material.html?category=${i}">Ver materiales<i class="iconButton fa fa-arrow-right"></i></a>
       </div>
     `;
     row.append(div);

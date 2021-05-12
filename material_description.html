@@ -10,6 +10,8 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="./styles/material_description.css">
   <script defer src="./js/cart-container.js"></script>
+  <script defer src="./js/sticky-nav.js"></script>
+  <script defer src="./js/dialog.js"></script>
 </head>
 <body>
   <header class="header" >
@@ -60,6 +62,15 @@
     </nav>
   </header>
 
+  <dialog id="dialog">
+    <p class="dialog-description">
+      Se ha agregado con exito
+    </p>
+    <button class="datasheet-button" id="close-modal">
+      Aceptar
+    </button>
+  </dialog>
+
   <main class="main-container">
     <div class="material_description-container">
       <div class="material-image-container">
@@ -75,7 +86,9 @@
         <p class="description">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam laboriosam nostrum ab nulla quia, culpa earum corrupti illum unde harum dolorem perferendis, magnam labore omnis. Voluptatem nostrum saepe consectetur eaque!
         </p>
-        <button class="datasheet-button">Datasheet</button>
+        <a href="https://pdf1.alldatasheet.com/datasheet-pdf/view/166465/AD/ADTL084.html" target="_blank" rel="noreferrer">
+          <button class="datasheet-button">Datasheet</button>
+        </a>
         <div class="select-container">
           <div class="text-and-button-container">
             <label class="quantity-label">Cantidad</label>
