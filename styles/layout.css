@@ -149,7 +149,7 @@ body{
 }
 
 .container {
-  margin: 225px auto 0 auto;
+  margin: 225px auto 25px auto;
   max-width: 1280px;
   width: 90%;
 }
