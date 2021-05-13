@@ -11,7 +11,7 @@ _El prototipo del sistema se ha desplegado en Firebase Hosting a través de un P
 
 _Menciona las herramientas que utilizaste para crear tu proyecto_
 
-* Html5
+* Html 5
 * CSS3
 * Javascript
 
